@@ -12,5 +12,5 @@ class Product(models.Model):
         upload_to="logos", null=True, blank=True, verbose_name="Foto"
     )
 
-    def __str__(self):
+    def __srt__(self):
         return self.name
