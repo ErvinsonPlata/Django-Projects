@@ -30,7 +30,7 @@
         <img
           src="{{ product.photo.url}}"
           alt="{{product.name}}"
-          class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+          class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-100"
         />
         {% endif %}
 
@@ -41,6 +41,7 @@
           <h3 class="mt-4 text-lg font-medium text-gray-900">{{product.name}}</h3>
       
           <p class="mt-1.5 text-sm text-gray-700">{{product.price}}</p>
+          <p class="mt-1.5 text-sm text-gray-700">{{product.data_created}}</p>
       
           <form class="mt-4">
             {% comment "" %}
