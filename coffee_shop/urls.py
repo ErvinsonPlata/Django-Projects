@@ -21,5 +21,6 @@ from django.conf.urls.static import static #para incluir archivos estáticos
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('usuarios/', include('users.urls')),
     path('productos/', include('products.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

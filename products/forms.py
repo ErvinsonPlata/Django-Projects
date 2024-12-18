@@ -7,7 +7,7 @@ class ProductForm(forms.Form): #formulario
     price = forms.DecimalField(max_digits=10, decimal_places=2, label="Precio")
     avilable = forms.BooleanField(initial=True, label="Disponible",required=False)
     photo = forms.ImageField(label="Foto", required=False)
-    date_created = forms.DateTimeField(label="Fecha de creación")
+    date_created = forms.DateField(label="Fecha de creación", required=False)
 
     def save(self): #metodo de guardar, por medio de un diccionario
         Product.objects.create(
