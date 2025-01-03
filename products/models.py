@@ -11,7 +11,9 @@ class Product(models.Model):
     photo = models.ImageField(
         upload_to="logos", null=True, blank=True, verbose_name="Foto"
     )
-    date_created = models.DateField(auto_now_add=True, verbose_name="Fecha de creación", null=True)    
+    date_created = models.DateField(
+        auto_now_add=True, verbose_name="Fecha de creación", null=True
+    )
 
     def __str__(self):
         return self.name
